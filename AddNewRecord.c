@@ -11,11 +11,12 @@ struct record{
     char curr_address;
 	char father_name;
 	char father_name2;
-    int citizenship_no;
+    char citizenship_no;
     char mother_name;
     char mother_name2;
 	char gender;
     char email;
+    int account_no;
 };
 
 
@@ -68,7 +69,7 @@ int main(){
         scanf("%s", &r.father_name);
         scanf("%s", &r.father_name2);
         printf("Enter citizenship number:");
-        scanf("%d", &r.citizenship_no);
+        scanf("%s", &r.citizenship_no);
 
         printf("\nAddress Detail\n");
         printf("Enter current address:");
