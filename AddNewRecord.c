@@ -30,26 +30,24 @@ struct {
 void new_acc(){
  char temp;
     int choice;
-   // FILE *ptr;
-   // ptr=fopen("newfile.txt","a+");
+    FILE *ptr;
+    ptr=fopen("C:\\Rojesh\\newfile.txt","a+");
     system("cls");
     printf("\t==================================== ADD RECORD  ========================================================");
     printf("\n\n\n\t\t\t\t\tDate(mm/dd/yyyy): ");
     scanf("%d/%d/%d",&add.deposit.month,&add.deposit.day,&add.deposit.year);
     
    
-        printf("\n\t\t\t\t\tEnter your  First name: ");
-        scanf("%s",add.name);
+    printf("\n\t\t\t\t\tEnter your  First name: ");
+    scanf("%s",add.name);
         
-        printf("\n\t\t\t\t\tEnter your  Last name: ");
-        scanf("%s",add.name2);
+    printf("\n\t\t\t\t\tEnter your  Last name: ");
+    scanf("%s",add.name2);
         
     
     printf("\n\t\t\t\t\tEnter Your date of birth(mm/dd/yyyy): ");
     scanf("%d/%d/%d",&add.dob.month,&add.dob.day,&add.dob.year);
-    
-
-    
+        
     printf("\n\t\t\t\t\tEnter your Current Address: ");
     scanf("%s",add.curr_address);
     
@@ -59,32 +57,31 @@ void new_acc(){
     printf("\n\t\t\t\t\tEnter the citizenship number: ");
     scanf("%s",add.citizenship_no);
     
-    printf("\n\t\t\t\t\tEnter Your Gender: ");
+    printf("\n\t\t\t\t\tEnter your Gender: ");
     scanf("%s",add.gender);
     
-    printf("\n\t\t\t\t\tEnter Your Father FirstName: ");
+    printf("\n\t\t\t\t\tEnter your Father's FirstName: ");
     scanf("%s",add.father_name);
-    printf("\n\t\t\t\t\tEnter Your Mother FirstName: ");
+    printf("\n\t\t\t\t\tEnter your Mother's FirstName: ");
     scanf("%s",add.mother_name);
     
     
-    printf("\n\t\t\t\t\tEnter the Mobile number: ");
+    printf("\n\t\t\t\t\tEnter your Mobile number: ");
     scanf("%lf",&add.phone);
     
-    printf("\n\t\t\t\t\tEnter the Email: ");
+    printf("\n\t\t\t\t\tEnter your Email: ");
     scanf("%s",add.email);
     
 
-    
     printf("\n\t\t\t\t\t\t Type of account:\n\n\t\t\t\t\t\t#Saving\n\t\t\t\t\t\t#Current\n\t\t\t\t\t\t#Fixed1(for 1 year)\n\t\t\t\t\t\t#Fixed2(for 2 years)\n\t\t\t\t\t\t#Fixed3(for 3 years)\n\n\t\t\t\t\tEnter your choice: ");
     scanf("%s",add.acc_type);
     
-       printf("\n\t\t\t\t\t\t Branch Name :\n\n\t\t\t\t\t\t[1] Kathmandu\n\t\t\t\t\t\t[2] Pokhara\n\t\t\t\t\t\t[3] Biratnagar\n\t\t\t\t\t\t[4] Hetauda\n\t\t\t\t\t\t[4] Ilam\n\t\t\t\t\t\t[5] Dang\n\n\t\t\t\t\tEnter your choice: ");
+    printf("\n\t\t\t\t\t\t Branch Name :\n\n\t\t\t\t\t\t[1] Kathmandu\n\t\t\t\t\t\t[2] Pokhara\n\t\t\t\t\t\t[3] Biratnagar\n\t\t\t\t\t\t[4] Hetauda\n\t\t\t\t\t\t[5] Ilam\n\t\t\t\t\t\t[6] Dang\n\n\t\t\t\t\tEnter your choice: ");
     scanf("%d",&add.branch_no);
     
 
 if(add.branch_no >6){
-		Beep(610,500);;
+	Beep(610,500);;
 	printf("\t\t\t\tPlease Enter the Valid Branch Name");
 	printf("\n\n\t\t\t\t----Enter the Branch Name Again--------");
 	   printf("\n\n\t\t\t\t\t\t Branch Name :\n\n\t\t\t\t\t\t[1] Kathmandu\n\t\t\t\t\t\t[2] Pokhara\n\t\t\t\t\t\t[3] Biratnagar\n\t\t\t\t\t\t[4] Hetauda\n\t\t\t\t\t\t[5] Ilam\n\t\t\t\t\t\t[6] Dang\n\n\t\t\t\t\tEnter your choice: ");
@@ -123,7 +120,7 @@ switch(add.branch_no){
    
    
    //---------------------------------------------------------------------------------//
-   // fclose(ptr);
+    fclose(ptr);
     printf("\n\t\t\t\t\tAccount created successfully!");
     printf("\n\n========================================================================================================================");
     printf("\n\n\n\t\t\t\t\t Greetings from Nabil Bank! \n\n\tWe would like to thankyou for opening your bank account with us. Your account details are as follows:\n\n");
@@ -131,7 +128,7 @@ switch(add.branch_no){
     printf("\t\t\t\tAccount Number:  %s",accountNumberGeneration(add.branch_no));
     printf("\n\n\t\t\t\tAccount Type:  %s\n\n",add.acc_type);
     
-    printf("\t\t\Once again thankyou for choosing Nabil as your bank, we look forward to Surge Together Ahead.\n\n");
+    printf("\t\t\tOnce again thankyou for choosing Nabil as your bank, we look forward to Surge Together Ahead.\n\n");
     printf("\t\t\t\tThank You.");
     printf("\n\n\n\t\tCustomer Service desk\n");
     printf("\n\t\t%s Branch",*add.branch);
