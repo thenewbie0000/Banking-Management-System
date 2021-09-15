@@ -1,3 +1,3 @@
 void loan(){
-	printf("This is Login Feature");
+	printf("This is Logsin Feature");
 	}
