@@ -1,6 +1,6 @@
 #include "AddNewRecord.c"
 
-int main(){
+void erase() {
     FILE *ptr, *del;
 	int num, found;
     ptr= fopen("C:\\\\newfile.txt","r+b");

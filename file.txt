@@ -1,0 +1,3 @@
+Date,acc_no,Customer_firstname,Customer_lastname,DOB,CurrentAdress,PermanentAdress,CitizenshipNumber,Gender,Father_firstname,mother_firstname,mobile_no,Email,AccountType,BranchName,Balance
+
+12/12/2021,0521107595999904,firstname,lastname,12/12/2021,current,permanent,947397292,male,fathername,mothername,928997273232,email,Saving,Pokhara,200.000000

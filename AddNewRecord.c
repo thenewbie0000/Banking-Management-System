@@ -13,7 +13,7 @@ struct {
     int branch_no;
     char curr_address[40];
     char per_address[40];
-    double phone;
+    char phone[15];
     char acc_type[10];
     char *branch[40];
     float amt;
@@ -31,7 +31,8 @@ void new_acc(){
  char temp;
     int choice;
     FILE *ptr;
-    ptr=fopen("C:\\Rojesh\\newfile.txt","a+");
+    ptr=fopen("file.txt","a+");
+    
     system("cls");
     printf("\t==================================== ADD RECORD  ========================================================");
     printf("\n\n\n\t\t\t\t\tDate(mm/dd/yyyy): ");
@@ -67,7 +68,7 @@ void new_acc(){
     
     
     printf("\n\t\t\t\t\tEnter your Mobile number: ");
-    scanf("%lf",&add.phone);
+    scanf("%s",add.phone);
     
     printf("\n\t\t\t\t\tEnter your Email: ");
     scanf("%s",add.email);
@@ -116,8 +117,7 @@ switch(add.branch_no){
 
  //In the section we will check whether generated account number is taken or not and save it to file
   //--------------------------------------------------------------------------------//
-   
-   
+fprintf(ptr,"%d/%d/%d,%s,%s,%s,%d/%d/%d,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%f\n",add.deposit.month,add.deposit.day,add.deposit.year,accountNumberGeneration(add.branch_no),add.name,add.name2,add.dob.month,add.dob.day,add.dob.year,add.curr_address,add.per_address,add.citizenship_no,add.gender,add.father_name,add.mother_name,add.phone,add.email,add.acc_type,*add.branch,add.amt);
    
    //---------------------------------------------------------------------------------//
     fclose(ptr);
