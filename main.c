@@ -1,11 +1,13 @@
-#include "DeleteRecord.c"
-#include "FileRecord.c"
-#include "MoneyDeposit.c"
-#include "MoneyTransaction.c"
 #include<stdio.h>
 #include<stdlib.h>
 #include<windows.h>
 #include <stdbool.h>
+#include <string.h>
+#include "FileRecord.c"
+#include "MoneyTransaction.c"
+#include "structure.c"
+#include "DeleteRecord.c"
+#include "UpdateRecord.c"
 #include "AddNewRecord.c"
 #include "Options.c"
 #include "Loan.c"

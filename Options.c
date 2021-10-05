@@ -77,7 +77,11 @@ void close(void)
 
 
 
-void view_list(){}
+void view_list(){
+printf("working");
+
+}
+
  
 void menu(void)
 {   int choice;

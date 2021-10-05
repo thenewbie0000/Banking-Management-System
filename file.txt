@@ -1,3 +1,2 @@
-Date,acc_no,Customer_firstname,Customer_lastname,DOB,CurrentAdress,PermanentAdress,CitizenshipNumber,Gender,Father_firstname,mother_firstname,mobile_no,Email,AccountType,BranchName,Balance
-
-12/12/2021,0521107595999904,Ramesh,Stewart,12/12/2021,Biratnagar,Kathmandu,947397292,male,Mohan,Bindu,9800000043,ramesh111@gmail.com,Saving,Pokhara,200.000000
+05/04/2021 0441107532999967 Ramesh Stewart 10/11/2001 Kathmandu Janakpur 023823827336 male Mahesh Bindu 98283632765 ramesh@gmail.com Saving Hetauda 200.000000
+09/07/2021 0441107547999952 Ranju Trump 06/02/2002 Pokhara Biratnagar 3094938437 female Mahendra Mansi 9838237602 ranju@gmail.com Saving Pokhara 210.000000

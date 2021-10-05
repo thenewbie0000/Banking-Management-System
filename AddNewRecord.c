@@ -2,30 +2,6 @@
 int i,j;
 int main_exit;
 
-struct date{
-    int month,day,year;
-
-};
-    
-struct {
-	char name[60];
-    char name2[60];  
-    int branch_no;
-    char curr_address[40];
-    char per_address[40];
-    char phone[15];
-    char acc_type[10];
-    char *branch[40];
-    float amt;
-    char father_name[20];
-    int citizenship_no[15];
-    char mother_name[20];
-	char gender[10];
-    char email[40];
-    struct date dob;
-    struct date deposit;
-    struct date withdraw;
-}add;
 
 void new_acc(){
  char temp;
@@ -114,18 +90,22 @@ switch(add.branch_no){
     printf("\n\n\t\t\t\t\tEnter the amount to deposit: $");
     scanf("%f",&add.amt); 
     
+    
+    strcpy(add.acc_no,accountNumberGeneration(add.branch_no));
+    
 
- //In the section we will check whether generated account number is taken or not and save it to file
+ //In the section we will check whether generated account number is taken or not and save the data to file
   //--------------------------------------------------------------------------------//
-fprintf(ptr,"%d/%d/%d,%s,%s,%s,%d/%d/%d,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%f\n",add.deposit.month,add.deposit.day,add.deposit.year,accountNumberGeneration(add.branch_no),add.name,add.name2,add.dob.month,add.dob.day,add.dob.year,add.curr_address,add.per_address,add.citizenship_no,add.gender,add.father_name,add.mother_name,add.phone,add.email,add.acc_type,*add.branch,add.amt);
+fprintf(ptr,"%d/%d/%d %s %s %s %d/%d/%d %s %s %s %s %s %s %s %s %s %s %f\n",add.deposit.month,add.deposit.day,add.deposit.year,add.acc_no,add.name,add.name2,add.dob.month,add.dob.day,add.dob.year,add.curr_address,add.per_address,add.citizenship_no,add.gender,add.father_name,add.mother_name,add.phone,add.email,add.acc_type,*add.branch,add.amt);
    
    //---------------------------------------------------------------------------------//
     fclose(ptr);
+    
     printf("\n\t\t\t\t\tAccount created successfully!");
     printf("\n\n========================================================================================================================");
     printf("\n\n\n\t\t\t\t\t Greetings from Nabil Bank! \n\n\tWe would like to thankyou for opening your bank account with us. Your account details are as follows:\n\n");
     printf("\t\t\t\tAccount Name:  %s %s\n\n",add.name, add.name2);
-    printf("\t\t\t\tAccount Number:  %s",accountNumberGeneration(add.branch_no));
+    printf("\t\t\t\tAccount Number:  %s",add.acc_no);
     printf("\n\n\t\t\t\tAccount Type:  %s\n\n",add.acc_type);
     
     printf("\t\t\tOnce again thankyou for choosing Nabil as your bank, we look forward to Surge Together Ahead.\n\n");
