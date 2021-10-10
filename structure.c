@@ -22,4 +22,4 @@ struct {
     struct date dob;
     struct date deposit;
     struct date withdraw;
-}add,rem,update;
+}add,rem,update,trans;
