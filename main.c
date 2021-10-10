@@ -4,12 +4,12 @@
 #include <stdbool.h>
 #include <string.h>
 #include "FileRecord.c"
-#include "MoneyTransaction.c"
 #include "structure.c"
 #include "DeleteRecord.c"
 #include "UpdateRecord.c"
 #include "AddNewRecord.c"
 #include "Options.c"
+#include "MoneyTransaction.c"
 #include "Loan.c"
 #include "ATMService.c"
 
