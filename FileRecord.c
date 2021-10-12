@@ -1,3 +1,4 @@
+
 void view_list(){	
 	 FILE *view;
     view=fopen("file.txt","r");
