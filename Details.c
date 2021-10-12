@@ -1,5 +1,4 @@
 float interest(float t, float amount, int rate);
-
 void details(void){
     FILE *ptr;
     int test=0,rate;
