@@ -1,3 +1,4 @@
+
 void transact(void)
 {   int choice,test=0;
     FILE *old,*newrec;
