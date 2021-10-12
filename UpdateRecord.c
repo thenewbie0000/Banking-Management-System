@@ -1,9 +1,6 @@
 int main_exit;
-
-
 void edit(){
-	
-   FILE *ptr,*del;
+  FILE *ptr,*del;
    int choice,test = 0;
    ptr=fopen("file.txt","r");
    del=fopen("temporary.txt","w");
