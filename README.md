@@ -25,16 +25,14 @@
  # 9) ***LOGIN Feature*** 
 ## *This is very helpful feature in banking Managment System library. When user opens or starts software he/she is asked for username and password. so he/she have to enter correct details for login ,otherwise, he/she cannot login. Similary, this software also provides features for username and password setup i.e user can set their username and password as per their wish . so this feature makes software excellent.  User's username  and password is saved in password.dat file.*
 
- # ---------------------------------------------------------------
- 
-### Thankyou to the Members of this project :
+# *Thankyou to the Members of this project* :
 # [Subarna Khadka](https://github.com/SubarnaKhadka)
  ![Subarna's GitHub stats](https://github-readme-stats.vercel.app/api?username=SubarnaKhadka&show_icons=true&theme=radical)
-### [Rojesh Shrestha](https://github.com/thenewbie0000)
+# [Rojesh Shrestha](https://github.com/thenewbie0000)
 ![Rojesh's GitHub stats](https://github-readme-stats.vercel.app/api?username=thenewbie0000&show_icons=true&theme=radical)
-### [Sujan Kadariya](https://github.com/sujankadariya)
+# [Sujan Kadariya](https://github.com/sujankadariya)
  ![Sujan's GitHub stats](https://github-readme-stats.vercel.app/api?username=sujankadariya&show_icons=true&theme=radical)
-### [Aakriti Adhikari](https://github.com/aakritits)
+# [Aakriti Adhikari](https://github.com/aakritits)
  ![Aakriti's GitHub stats](https://github-readme-stats.vercel.app/api?username=aakritits&show_icons=true&theme=radical)
  
 # Sankalpa Tiwari
