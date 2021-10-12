@@ -1,10 +1,8 @@
 #include<stdio.h>
-
 int amount=1000, deposit, withdraw;
 int choice, pin, k;
 char transaction ='y';
- 
-void atm()
+ void atm()
 {
 	while (pin != 9841)
 	{
