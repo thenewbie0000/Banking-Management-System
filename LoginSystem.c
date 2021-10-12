@@ -1,8 +1,5 @@
-
 int main_exit; 
-
 void loginSystem(){
-	
 char username[50],askuser[50],askpass[50] ,password[50],new_username[50],new_password[50];
 	
 FILE *file,*news;
@@ -77,4 +74,3 @@ printf("\n\t\t========================================LOGIN SYSTEM PAGE=========
                    goto erase_invalid;}
 		}
 }
-
