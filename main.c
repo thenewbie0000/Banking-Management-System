@@ -3,19 +3,22 @@
 #include<windows.h>
 #include <stdbool.h>
 #include <string.h>
-#include "FileRecord.c"
 #include "structure.c"
 #include "DeleteRecord.c"
 #include "UpdateRecord.c"
 #include "AddNewRecord.c"
+#include "Loan.c"
 #include "Options.c"
 #include "MoneyTransaction.c"
-#include "Loan.c"
 #include "ATMService.c"
+#include "Details.c"
+#include "FileRecord.c"
+#include "LoginSystem.c"
 
-	//only code for first(1) and last(9) menu is written..
+
+
+	//only code for loan menu left
 int main(){
  options();
- 
  return 0;
 }

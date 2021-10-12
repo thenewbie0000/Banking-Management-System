@@ -1,3 +1,5 @@
+
+
 void loan() {
     int loan_amount;
     int account_no;
