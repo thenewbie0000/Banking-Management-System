@@ -17,7 +17,7 @@
 
 
 
-	//only code for loan menu left
+	//all features completed
 int main(){
  options();
  return 0;

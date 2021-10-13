@@ -2,9 +2,6 @@ int main_exit;
 
 void menu();
 void close();
-
-
-
 void fordelay(int j)
 {   int i,k;
     for(i=0;i<j;i++)
@@ -15,6 +12,7 @@ int options()
 {	
 int i=0;	
  char temp;
+ 
 	system("color A");	
 	FILE *info;
 	info = fopen("password.dat","r");
@@ -29,7 +27,7 @@ int i=0;
 
     printf("\n\n\n\t\t\t\t   WELCOME  To NABIL BANK LIMITED \n\n\t\t\t\t       Surging Together Ahead");
         printf("\n\n\t------------------------------------------------------------------------------------------------");
-        printf("\n\t\t\t\t\t  USER LOGIN  DETAILS  PAGE");
+	    printf("\n\t\t\t\t\t  USER LOGIN  DETAILS  PAGE ");
         printf("\n\t------------------------------------------------------------------------------------------------");
     printf("\n\n\n\t\t\t\tEnter the Username to login: ");
     scanf("%s",user);

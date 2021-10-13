@@ -7,6 +7,8 @@ struct {
 	char name[60];
     char name2[60];  
     int branch_no;
+    int type,time,rate,remain;
+    float intrst;
     char acc_no[30];
     char curr_address[40];
     char per_address[40];
